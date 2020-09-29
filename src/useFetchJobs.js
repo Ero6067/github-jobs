@@ -12,7 +12,7 @@ function reducer(state, action) {
 			return { loading: true, jobs: [] };
 		case ACTIONS.GET_DATA:
 			return { ...state, loading: false, jobs: action.payload.jobs };
-		case ACTIONs.ERROR:
+		case ACTIONS.ERROR:
 			return {
 				...state,
 				loading: false,
